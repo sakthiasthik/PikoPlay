@@ -42,6 +42,7 @@ pio run -t upload
 * LEFT/RIGHT picks a system, A opens it, B goes back. Only A starts things.
 * Hold SELECT+START for one second to leave a game. Saves are written then.
 * SETTINGS has the theme, screen size, menu speed and more.
+* Buttons for every system (NES, Game Boy, arcade games, NEKO, USB gamepad): [CONTROLS.md](CONTROLS.md).
 
 ## Add games
 
