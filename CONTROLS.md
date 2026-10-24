@@ -141,37 +141,119 @@ Every file below was run through the same checks the firmware performs.
 | Spider-Man (GBC) | ✅ works (MBC5, no save RAM) |
 | Super Mario Bros. 3 (NES) | ✅ works (mapper 4) |
 
-### Game-specific notes
-
-- **Grand Theft Auto (GBC):** hold **SELECT + A** together to enter a vehicle, press
-  **SELECT** to exit, B fires (needs a weapon), SELECT on foot changes weapon. The game
-  never tells you this — it was only in the printed manual.
-- **Grand Theft Auto 2 (GBC):** same idea — hold **SELECT + A** to enter a vehicle and
-  press **SELECT** to get out. No save file (the cartridge has no save RAM).
-- **Spider-Man (GBC):** A jumps (and swings on webs in mid-air), B attacks with webs.
-  The Web Ball is a quick **B → A** roll of the thumb.
-
 ## How to play each game
 
 START pauses in almost every game. X and Y do nothing in NES/GB/GBC games. To leave any
-game, hold SELECT + START for one second.
+game, hold SELECT + START for one second. Everything is written out below — no external
+guide is needed.
 
-| Game | Controls | Guide |
-|---|---|---|
-| Asteroids (Atari) | LEFT/RIGHT rotate, UP thrust, DOWN special move (hyperspace / shields / flip, per variation), A or B fire. START = start game, SELECT = pick a game variation | [Manual scans](https://archive.org/details/atari_2600_asteroids) |
-| Batman - The Animated Series (GB) | A jump (UP + A fires the grapple), B punch / kick / Batarang, SELECT toggles Batarang | [Manual PDF](https://www.thegameisafootarcade.com/wp-content/uploads/2017/03/Batman-The-Animated-Series-Game-Manual.pdf) |
-| Castlevania - The Adventure (GB) | A jump, B whip, UP climbs ropes, DOWN crouches | [Gameplay guide](https://strategywiki.org/wiki/Castlevania:_The_Adventure/Gameplay) |
-| Castlevania II - Belmont's Revenge (GB) | A jump, B whip, UP + B sub-weapon (axe / holy water) | [CastleVania Dungeon](http://hardcoregaming101.net/cvbackup/cv2br.htm) |
-| Contra (NES) | A jump, B shoot, D-pad move/aim (hold UP to aim up, DOWN crouches, DOWN + A drops through platforms). 30 lives: UP UP DOWN DOWN LEFT RIGHT LEFT RIGHT B A START | [FAQ PDF](https://www.video-games-museum.com/en/faqs/Nes/6355-Contra.pdf) |
-| Contra Force (NES) | A jump, B shoot, START = pause menu (characters + battle plans), SELECT switches weapon when powered up | [Manual text](http://www.atarihq.com/tsr/manuals/contraf.txt), [Walkthrough](https://www.ign.com/articles/2007/04/30/contra-force-walkthrough-784592) |
-| Double Dragon (NES) | A punch, B kick, A + B jump, double-tap LEFT/RIGHT head butt | [Manual text](https://www.atarihq.com/tsr/manuals/dbldragn.txt) |
-| Grand Theft Auto (GBC) | On foot: D-pad move, **hold SELECT + A** to enter a car, SELECT exit / change weapon, B fire. In a car: A accelerate, D-pad steers | [Controls](https://en.wikigta.org/en-wiki/wiki/Controls_(Grand_Theft_Auto)), [How to drive](https://www.gta-growth.com/gta/controles) |
-| Grand Theft Auto 2 (GBC) | Same vehicle combo: **hold SELECT + A** to enter, SELECT to exit. D-pad moves; B changes weapon | [Controls](https://gta.fandom.com/wiki/Controls_for_GTA_2) |
-| Legend of Zelda - Link's Awakening DX (GBC) | A sword (default), B assigned item, START inventory, SELECT map, A + B + START + SELECT = save | [Controls](https://strategywiki.org/wiki/The_Legend_of_Zelda:_Link%27s_Awakening/Controls) |
-| Mortal Kombat Trilogy (NES) | A punch, B kick, D-pad move (back = block, UP jump, DOWN crouch), specials = direction sequence + A or B | [Move list (unlicensed port, approximate)](https://icemantraveler.github.io/mkksg/fan_made/mk1ae_default.htm) |
-| Prince of Persia (NES) | A jump / sword attack, B careful step / block, UP jump up / climb, DOWN crouch, UP + A long jump | [General FAQ](https://www.ign.com/articles/2004/09/23/prince-of-persia-1989-general-faq-550561) |
-| Spider-Man (GBC) | A jump / web-swing, B web attack, Web Ball = roll B → A, D-pad move | [IGN guide](https://guidesarchive.ign.com/guides/14631/basics.html) |
-| Super Mario Bros. 3 (NES) | A jump / swim, B run / fireball, DOWN crouch / slide, START pause, SELECT uses item on the map screen | [Manual text](https://patpend.net/manuals/nes/super_mario_bros._3.txt) |
+### Atari 2600
+
+**Asteroids**
+- LEFT / RIGHT: rotate the ship
+- UP: thrust
+- DOWN: special move, depends on the game variation (hyperspace, shields or flip)
+- A or B: fire
+- START: start the game; SELECT: choose a game variation
+
+### Game Boy
+
+**Batman - The Animated Series**
+- A: jump; UP + A: fire the grapple
+- B: punch / kick; throws the Batarang once found
+- SELECT: switch between Batarang and normal attack
+- START: pause
+
+**Castlevania - The Adventure**
+- A: jump
+- B: whip
+- UP: climb ropes
+- DOWN: crouch
+- START: pause
+
+**Castlevania II - Belmont's Revenge**
+- A: jump
+- B: whip
+- UP + B: sub-weapon (axe or holy water)
+- DOWN: crouch
+- START: pause
+
+### Game Boy Color
+
+**Grand Theft Auto**
+- On foot: LEFT / RIGHT turn, A walks / runs forward, DOWN walks backward, B punches / shoots
+- SELECT: change weapon
+- **SELECT + A: enter a vehicle** (the game never tells you this)
+- A + B: open a crate; START: pause
+- In a vehicle: A accelerates, LEFT / RIGHT steer, DOWN brakes / reverses
+- SELECT: exit the vehicle; START: pause
+
+**Grand Theft Auto 2**
+- Same layout as GTA: **SELECT + A** enters a vehicle, SELECT exits
+- On foot: A forward, DOWN back, LEFT / RIGHT turn, B attacks, SELECT changes weapon
+- In a vehicle: A accelerates, LEFT / RIGHT steer, DOWN brakes / reverses, SELECT exits
+- START: pause. There is no save file.
+
+**Legend of Zelda - Link's Awakening DX**
+- D-pad: move
+- A and B: equipped items (the sword is on A by default); change them in the inventory
+- START: open the inventory / sub-screen
+- SELECT: world map
+- A + B + START + SELECT together: save the game
+
+**Spider-Man**
+- D-pad: move
+- A: jump (in mid-air, swings on a web)
+- B: web attack
+- B then A quickly (thumb roll): Web Ball
+- START: pause
+
+### NES
+
+**Contra**
+- D-pad: move and aim
+- A: jump
+- B: shoot
+- DOWN: crouch; DOWN + A: drop through a platform
+- START: pause; SELECT: 1P / 2P choice and continue/end on the title and game-over screens
+- 30 lives: UP UP DOWN DOWN LEFT RIGHT LEFT RIGHT B A START
+
+**Contra Force**
+- D-pad: move and aim; DOWN: crouch
+- A: jump
+- B: shoot; A + B: jump and shoot
+- START: pause / command menu (characters and battle plans)
+- SELECT: change weapon once powered up
+
+**Double Dragon**
+- A: punch
+- B: kick
+- A + B: jump
+- Double-tap LEFT or RIGHT: head butt
+- SELECT: switch 1P / 2P on the title screen; START: begin
+
+**Mortal Kombat Trilogy**
+- D-pad: move; UP: jump; DOWN: crouch; LEFT (away from the opponent): block
+- A: punch
+- B: kick
+- Special moves: a direction sequence followed by A or B
+- This is the unlicensed NES port, so some move inputs differ from the arcade version.
+
+**Prince of Persia**
+- A: jump; also attacks with the sword
+- B: careful step; also blocks in a sword fight
+- UP: climb up / jump up; also blocks
+- DOWN: crouch / climb down
+- UP + A: long jump
+- START: pause
+
+**Super Mario Bros. 3**
+- LEFT / RIGHT: move
+- A: jump / swim
+- B: run / throw fireball / pick up and throw
+- DOWN: crouch / slide; UP: enter doors and climb vines
+- START: pause
+- SELECT: use an item on the map screen
 
 ## Where games go
 
