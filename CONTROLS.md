@@ -148,6 +148,26 @@ Every file below was run through the same checks the firmware performs.
   **SELECT** to exit, B fires (needs a weapon), SELECT on foot changes weapon. The game
   never tells you this — it was only in the printed manual.
 
+## How to play each game
+
+START pauses in almost every game. X and Y do nothing in NES/GB/GBC games. To leave any
+game, hold SELECT + START for one second.
+
+| Game | Controls | Guide |
+|---|---|---|
+| Asteroids (Atari) | LEFT/RIGHT rotate, UP thrust, DOWN special move (hyperspace / shields / flip, per variation), A or B fire. START = start game, SELECT = pick a game variation | [Manual scans](https://archive.org/details/atari_2600_asteroids) |
+| Batman - The Animated Series (GB) | A jump (UP + A fires the grapple), B punch / kick / Batarang, SELECT toggles Batarang | [Manual PDF](https://www.thegameisafootarcade.com/wp-content/uploads/2017/03/Batman-The-Animated-Series-Game-Manual.pdf) |
+| Castlevania - The Adventure (GB) | A jump, B whip, UP climbs ropes, DOWN crouches | [Gameplay guide](https://strategywiki.org/wiki/Castlevania:_The_Adventure/Gameplay) |
+| Castlevania II - Belmont's Revenge (GB) | A jump, B whip, UP + B sub-weapon (axe / holy water) | [CastleVania Dungeon](http://hardcoregaming101.net/cvbackup/cv2br.htm) |
+| Contra (NES) | A jump, B shoot, D-pad move/aim (hold UP to aim up, DOWN crouches, DOWN + A drops through platforms). 30 lives: UP UP DOWN DOWN LEFT RIGHT LEFT RIGHT B A START | [FAQ PDF](https://www.video-games-museum.com/en/faqs/Nes/6355-Contra.pdf) |
+| Contra Force (NES) | A jump, B shoot, START = pause menu (characters + battle plans), SELECT switches weapon when powered up | [Manual text](http://www.atarihq.com/tsr/manuals/contraf.txt), [Walkthrough](https://www.ign.com/articles/2007/04/30/contra-force-walkthrough-784592) |
+| Double Dragon (NES) | A punch, B kick, A + B jump, double-tap LEFT/RIGHT head butt | [Manual text](https://www.atarihq.com/tsr/manuals/dbldragn.txt) |
+| Grand Theft Auto (GBC) | On foot: D-pad move, **hold SELECT + A** to enter a car, SELECT exit / change weapon, B fire. In a car: A accelerate, D-pad steers | [Controls](https://en.wikigta.org/en-wiki/wiki/Controls_(Grand_Theft_Auto)), [How to drive](https://www.gta-growth.com/gta/controles) |
+| Legend of Zelda - Link's Awakening DX (GBC) | A sword (default), B assigned item, START inventory, SELECT map, A + B + START + SELECT = save | [Controls](https://strategywiki.org/wiki/The_Legend_of_Zelda:_Link%27s_Awakening/Controls) |
+| Mortal Kombat Trilogy (NES) | A punch, B kick, D-pad move (back = block, UP jump, DOWN crouch), specials = direction sequence + A or B | [Move list](https://icemantraveler.github.io/mkksg/fan_made/mk1ae_default.htm) |
+| Prince of Persia (NES) | A jump / sword attack, B careful step / block, UP jump up / climb, DOWN crouch, UP + A long jump | [General FAQ](https://www.ign.com/articles/2004/09/23/prince-of-persia-1989-general-faq-550561) |
+| Super Mario Bros. 3 (NES) | A jump / swim, B run / fireball, DOWN crouch / slide, START pause, SELECT uses item on the map screen | [Manual text](https://patpend.net/manuals/nes/super_mario_bros._3.txt) |
+
 ## Where games go
 
 | System | Path on the console |
