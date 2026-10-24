@@ -82,6 +82,43 @@ The console becomes a standard USB HID gamepad for a PC:
 | Start | START |
 | D-pad / hat | D-pad |
 
+## Which games work
+
+No emulator runs everything, so pick games by these rules.
+
+### NES
+
+Supported mappers: 0–4, 7–11, 13, 15–18, 21–26, 32–34, 40–51, 57–62, 64–83, 86–90 —
+essentially every mapper commercial NES games used. Known examples that work:
+
+- Contra (mapper 2) — tested on the console
+- Super Mario Bros. 1 / 2 / 3 (0 / 1 / 4), Zelda I / II (1), Mega Man 1–6 (1 / 4),
+  Tetris (0), Metroid (1), Kirby's Adventure (4), DuckTales (2), Batman (4)
+
+Games that will **not** work:
+
+- Castlevania III: Dracula's Curse, Just Breed, Metal Slader Glory (mapper 5, MMC5)
+- Lagrange Point (mapper 85, VRC7)
+- Namco 163 games such as Mappy Kids (mapper 19, mostly Japan-only)
+- Unlicensed multicarts (mappers 6 / 235, e.g. Golden Game 150-in-1)
+
+### Game Boy / Game Boy Color
+
+Supported cartridge chips: no MBC, MBC1, MBC2, MBC3 (RTC clock included), MBC5 — this is
+nearly every GB/GBC game ever sold, including GTA, Pokémon (MBC3/MBC5), Tetris, Zelda
+games, Mario Land, Wario Land. Limits:
+
+- Cartridge save RAM must fit 32 KB (all commercial games do)
+- Games needing MBC7 (Kirby Tilt 'n' Tumble, Command Master), MBC6, the Game Boy Camera,
+  or IR link features (Robopon, Pocket Pikachu) will not start
+- A bad header checksum (patched/corrupted dumps) is rejected with "BAD ROM CHECKSUM"
+
+### Atari 2600
+
+ROM sizes 2 KB, 4 KB, 8 KB, 12 KB, 16 KB and 32 KB with standard bankswitching
+(F8, FA, F6, F4) are supported — that covers most commercial cartridges. Games using
+extra chips, such as Pitfall II (DPC), will not start.
+
 ## Where games go
 
 | System | Path on the console |
