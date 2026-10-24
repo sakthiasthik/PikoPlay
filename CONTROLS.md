@@ -104,15 +104,14 @@ Games that will **not** work:
 
 ### Game Boy / Game Boy Color
 
-Supported cartridge chips: no MBC, MBC1, MBC2, MBC3 (RTC clock included), MBC5 — this is
-nearly every GB/GBC game ever sold, including GTA, Pokémon (MBC3/MBC5), Tetris, Zelda
-games, Mario Land, Wario Land. Limits:
+Supported cartridge chips: no MBC, MBC1, MBC2, MBC3 (RTC clock included), and all MBC5
+variants (types `0x19`–`0x1E`, with or without RAM / battery / rumble) — nearly every
+GB/GBC game ever sold, including GTA, GTA 2, Spider-Man, Pokémon, Tetris, Zelda, Mario
+Land and Wario Land. Limits:
 
 - Cartridge save RAM must fit 32 KB (all commercial games do)
 - Games needing MBC7 (Kirby Tilt 'n' Tumble, Command Master), MBC6, the Game Boy Camera,
   or IR link features (Robopon, Pocket Pikachu) will not start
-- Dumps whose header declares **plain MBC5 with no RAM** (cartridge type `0x19`) are
-  rejected, e.g. some GTA 2 and Spider-Man dumps. MBC5+RAM (`0x1A` / `0x1B`) works fine.
 - A bad header checksum (patched/corrupted dumps) is rejected with "BAD ROM CHECKSUM"
 
 ### Atari 2600
@@ -135,11 +134,11 @@ Every file below was run through the same checks the firmware performs.
 | Contra Force (NES) | ✅ works (mapper 4) |
 | Double Dragon (NES) | ✅ works (mapper 1) |
 | Grand Theft Auto (GBC) | ✅ works (MBC5, 8K battery save) |
-| Grand Theft Auto 2 (GBC) | ❌ cart type `0x19` (plain MBC5) not supported |
+| Grand Theft Auto 2 (GBC) | ✅ works (MBC5, no save RAM) |
 | Legend of Zelda - Link's Awakening DX (GBC) | ✅ works (MBC5, 32K battery save) |
 | Mortal Kombat Trilogy (NES) | ✅ works (mapper 4) |
 | Prince of Persia (NES) | ✅ works (mapper 2) |
-| Spider-Man (GBC) | ❌ cart type `0x19` (plain MBC5) not supported |
+| Spider-Man (GBC) | ✅ works (MBC5, no save RAM) |
 | Super Mario Bros. 3 (NES) | ✅ works (mapper 4) |
 
 ### Game-specific notes
@@ -147,6 +146,10 @@ Every file below was run through the same checks the firmware performs.
 - **Grand Theft Auto (GBC):** hold **SELECT + A** together to enter a vehicle, press
   **SELECT** to exit, B fires (needs a weapon), SELECT on foot changes weapon. The game
   never tells you this — it was only in the printed manual.
+- **Grand Theft Auto 2 (GBC):** same idea — hold **SELECT + A** to enter a vehicle and
+  press **SELECT** to get out. No save file (the cartridge has no save RAM).
+- **Spider-Man (GBC):** A jumps (and swings on webs in mid-air), B attacks with webs.
+  The Web Ball is a quick **B → A** roll of the thumb.
 
 ## How to play each game
 
@@ -163,9 +166,11 @@ game, hold SELECT + START for one second.
 | Contra Force (NES) | A jump, B shoot, START = pause menu (characters + battle plans), SELECT switches weapon when powered up | [Manual text](http://www.atarihq.com/tsr/manuals/contraf.txt), [Walkthrough](https://www.ign.com/articles/2007/04/30/contra-force-walkthrough-784592) |
 | Double Dragon (NES) | A punch, B kick, A + B jump, double-tap LEFT/RIGHT head butt | [Manual text](https://www.atarihq.com/tsr/manuals/dbldragn.txt) |
 | Grand Theft Auto (GBC) | On foot: D-pad move, **hold SELECT + A** to enter a car, SELECT exit / change weapon, B fire. In a car: A accelerate, D-pad steers | [Controls](https://en.wikigta.org/en-wiki/wiki/Controls_(Grand_Theft_Auto)), [How to drive](https://www.gta-growth.com/gta/controles) |
+| Grand Theft Auto 2 (GBC) | Same vehicle combo: **hold SELECT + A** to enter, SELECT to exit. D-pad moves; B changes weapon | [Controls](https://gta.fandom.com/wiki/Controls_for_GTA_2) |
 | Legend of Zelda - Link's Awakening DX (GBC) | A sword (default), B assigned item, START inventory, SELECT map, A + B + START + SELECT = save | [Controls](https://strategywiki.org/wiki/The_Legend_of_Zelda:_Link%27s_Awakening/Controls) |
-| Mortal Kombat Trilogy (NES) | A punch, B kick, D-pad move (back = block, UP jump, DOWN crouch), specials = direction sequence + A or B | [Move list](https://icemantraveler.github.io/mkksg/fan_made/mk1ae_default.htm) |
+| Mortal Kombat Trilogy (NES) | A punch, B kick, D-pad move (back = block, UP jump, DOWN crouch), specials = direction sequence + A or B | [Move list (unlicensed port, approximate)](https://icemantraveler.github.io/mkksg/fan_made/mk1ae_default.htm) |
 | Prince of Persia (NES) | A jump / sword attack, B careful step / block, UP jump up / climb, DOWN crouch, UP + A long jump | [General FAQ](https://www.ign.com/articles/2004/09/23/prince-of-persia-1989-general-faq-550561) |
+| Spider-Man (GBC) | A jump / web-swing, B web attack, Web Ball = roll B → A, D-pad move | [IGN guide](https://guidesarchive.ign.com/guides/14631/basics.html) |
 | Super Mario Bros. 3 (NES) | A jump / swim, B run / fireball, DOWN crouch / slide, START pause, SELECT uses item on the map screen | [Manual text](https://patpend.net/manuals/nes/super_mario_bros._3.txt) |
 
 ## Where games go
