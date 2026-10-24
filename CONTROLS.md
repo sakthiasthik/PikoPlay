@@ -142,6 +142,12 @@ Every file below was run through the same checks the firmware performs.
 | Spider-Man (GBC) | ❌ cart type `0x19` (plain MBC5) not supported |
 | Super Mario Bros. 3 (NES) | ✅ works (mapper 4) |
 
+### Game-specific notes
+
+- **Grand Theft Auto (GBC):** hold **SELECT + A** together to enter a vehicle, press
+  **SELECT** to exit, B fires (needs a weapon), SELECT on foot changes weapon. The game
+  never tells you this — it was only in the printed manual.
+
 ## Where games go
 
 | System | Path on the console |
