@@ -1,6 +1,7 @@
 # Build output
 .pio/
 tools/build/
+.vscode/
 
 # Games and saves never belong in the repository
 roms_local/
