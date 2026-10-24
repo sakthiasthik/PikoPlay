@@ -111,6 +111,8 @@ games, Mario Land, Wario Land. Limits:
 - Cartridge save RAM must fit 32 KB (all commercial games do)
 - Games needing MBC7 (Kirby Tilt 'n' Tumble, Command Master), MBC6, the Game Boy Camera,
   or IR link features (Robopon, Pocket Pikachu) will not start
+- Dumps whose header declares **plain MBC5 with no RAM** (cartridge type `0x19`) are
+  rejected, e.g. some GTA 2 and Spider-Man dumps. MBC5+RAM (`0x1A` / `0x1B`) works fine.
 - A bad header checksum (patched/corrupted dumps) is rejected with "BAD ROM CHECKSUM"
 
 ### Atari 2600
@@ -118,6 +120,27 @@ games, Mario Land, Wario Land. Limits:
 ROM sizes 2 KB, 4 KB, 8 KB, 12 KB, 16 KB and 32 KB with standard bankswitching
 (F8, FA, F6, F4) are supported — that covers most commercial cartridges. Games using
 extra chips, such as Pitfall II (DPC), will not start.
+
+### Checked against the console (games_lib/)
+
+Every file below was run through the same checks the firmware performs.
+
+| Game | Result |
+|---|---|
+| Asteroids (Atari 2600) | ✅ works (8K, F8 bankswitch) |
+| Batman - The Animated Series (GB) | ✅ works (MBC1) |
+| Castlevania - The Adventure (GB) | ✅ works (MBC1) |
+| Castlevania II - Belmont's Revenge (GB) | ✅ works (MBC1) |
+| Contra (NES) | ✅ works (mapper 2, tested on the console) |
+| Contra Force (NES) | ✅ works (mapper 4) |
+| Double Dragon (NES) | ✅ works (mapper 1) |
+| Grand Theft Auto (GBC) | ✅ works (MBC5, 8K battery save) |
+| Grand Theft Auto 2 (GBC) | ❌ cart type `0x19` (plain MBC5) not supported |
+| Legend of Zelda - Link's Awakening DX (GBC) | ✅ works (MBC5, 32K battery save) |
+| Mortal Kombat Trilogy (NES) | ✅ works (mapper 4) |
+| Prince of Persia (NES) | ✅ works (mapper 2) |
+| Spider-Man (GBC) | ❌ cart type `0x19` (plain MBC5) not supported |
+| Super Mario Bros. 3 (NES) | ✅ works (mapper 4) |
 
 ## Where games go
 
